@@ -59,6 +59,7 @@ export default function Nabvar() {
         <Image
           className="m-0 h-36 md:hidden"
           src={logoComoEnCasa}
+          priority={true}
           alt="Imagen Logo"
           width={160}
           height={75}
