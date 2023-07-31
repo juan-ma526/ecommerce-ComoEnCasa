@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Carrousel from "./components/Carrousel";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -6,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <h2></h2>;
+  return <Carrousel />;
 }

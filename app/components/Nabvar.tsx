@@ -26,7 +26,7 @@ export default function Nabvar() {
           <motion.div
             initial={{ x: -500 }}
             animate={{ x: 0 }}
-            className="fixed left-0 top-56 bg-white h-screen text-black w-80"
+            className="fixed left-0 top-56 bg-white h-screen text-black w-80 z-50"
           >
             <nav className="mt-0">
               <ul className="flex left-0 flex-col mt-[40%] ml-[20%]  md:hidden">
