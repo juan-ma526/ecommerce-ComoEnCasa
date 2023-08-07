@@ -9,6 +9,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { MdOutlineAssignmentReturn } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
 import { BsTrophy } from "react-icons/bs";
+import Category from "./components/Category";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -115,6 +116,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Category />
     </div>
   );
 }
