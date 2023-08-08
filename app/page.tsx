@@ -10,6 +10,7 @@ import { MdOutlineAssignmentReturn } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
 import { BsTrophy } from "react-icons/bs";
 import Category from "./components/Category";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -117,6 +118,7 @@ export default function Home() {
         </div>
       </div>
       <Category />
+      <Footer />
     </div>
   );
 }
