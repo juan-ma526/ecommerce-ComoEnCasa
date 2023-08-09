@@ -4,6 +4,7 @@ import productoBurguer from "./assets/productoBurguer.jpg";
 import productoBurguerCheese from "./assets/productoBurguerCheese.jpg";
 import productoDrink from "./assets/productoDrink.jpg";
 import productoPizza from "./assets/productoPizza.jpg";
+import restaurant from "./assets/restaurante.jpg";
 import Image from "next/image";
 import { TbTruckDelivery } from "react-icons/tb";
 import { MdOutlineAssignmentReturn } from "react-icons/md";
@@ -118,6 +119,35 @@ export default function Home() {
         </div>
       </div>
       <Category />
+      {/**Newsletter */}
+      <div className="flex flex-col mt-11 mb-11 pl-4 pr-4 gap-6 justify-center items-center lg:flex-row">
+        <Image
+          src={restaurant}
+          alt="imagen restaurant"
+          className="w-[590px] h-[282px]"
+        />
+        <div className="flex flex-col items-center border-[1px] border-black w-[588px] h-[321px] pr-6 pl-6 pt-14 pb-14">
+          <h3 className="font-semibold text-2xl mb-0 mt-0 ">Newsletter</h3>
+          <h1 className="text-[32px] pt-[10px] pb-[10px] text-marron-700 font-semibold">
+            Subscribe to our emails
+          </h1>
+          <h4 className="mt-0 mb-0 text-neutral-600 pb-[39px]">
+            Stay Informed about the latest style!
+          </h4>
+          <div className="flex border-[1px] border-black items-center">
+            <form className="max-w-[805px]">
+              <input
+                type="text"
+                placeholder="Enter your email"
+                className="h-12 w-[395px]  pr-[70px] pl-6 md:w-[290px]"
+              />
+              <button className=" cursor-pointer hover:bg-black h-12 pt-0 pb-0 pl-[30px] pr-[30px] font-medium text-base capitalize bg-marron-500 text-white ">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
       <Footer />
     </div>
   );
