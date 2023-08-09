@@ -5,6 +5,7 @@ import { BiSearch, BiUser, BiCart } from "react-icons/bi";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Nabvar() {
   const [toggle, setToggle] = useState(false);
@@ -16,6 +17,7 @@ export default function Nabvar() {
   return (
     <div>
       <div className="flex justify-between items-center pt-6 pb-6 md:hidden">
+        {/**Mobile */}
         <HiMenuAlt3
           onClick={handleToggle}
           className={`cursor-pointer text-3xl md:hidden relative ${
@@ -30,9 +32,11 @@ export default function Nabvar() {
           >
             <nav className="mt-0">
               <ul className="flex left-0 flex-col mt-[40%] ml-[20%]  md:hidden">
-                <li className="hover:bg-slate-300 cursor-pointer text-lg py-4 px-3 text-amber-800">
-                  Home
-                </li>
+                <Link href="/">
+                  <li className="hover:bg-slate-300 cursor-pointer text-lg py-4 px-3 text-amber-800">
+                    Home
+                  </li>
+                </Link>
                 <li className="hover:bg-slate-300 cursor-pointer text-lg py-4 px-3">
                   Shop
                 </li>
@@ -42,9 +46,12 @@ export default function Nabvar() {
                 <li className="hover:bg-slate-300 cursor-pointer text-lg py-4 px-3">
                   Blog
                 </li>
-                <li className="hover:bg-slate-300 cursor-pointer text-lg py-4 px-3">
-                  About Us
-                </li>
+                <Link href="/about">
+                  <li className="hover:bg-slate-300 cursor-pointer text-lg py-4 px-3">
+                    About Us
+                  </li>
+                </Link>
+
                 <li className="hover:bg-slate-300 cursor-pointer text-lg py-4 px-3">
                   Contact Us
                 </li>
@@ -82,6 +89,7 @@ export default function Nabvar() {
           />
         </div>
       </div>
+      {/**Fullscreen */}
       <div className=" justify-between items-center pt-6 pb-6 hidden md:flex">
         <Image
           className="m-0 h-36 ml-5"
@@ -92,9 +100,11 @@ export default function Nabvar() {
         />
         <nav className="mt-0">
           <ul className=" hidden md:inline-flex">
-            <li className="hover:bg-slate-300 cursor-pointer text-lg py-4 px-3 text-amber-800">
-              Home
-            </li>
+            <Link href="/">
+              <li className="hover:bg-slate-300 cursor-pointer text-lg py-4 px-3 text-amber-800">
+                Home
+              </li>
+            </Link>
             <li className="hover:bg-slate-300 cursor-pointer text-lg py-4 px-3">
               Shop
             </li>
@@ -104,9 +114,11 @@ export default function Nabvar() {
             <li className="hover:bg-slate-300 cursor-pointer text-lg py-4 px-3">
               Blog
             </li>
-            <li className="hover:bg-slate-300 cursor-pointer text-lg py-4 px-3">
-              About Us
-            </li>
+            <Link href="/about">
+              <li className="hover:bg-slate-300 cursor-pointer text-lg py-4 px-3">
+                About Us
+              </li>
+            </Link>
             <li className="hover:bg-slate-300 cursor-pointer text-lg py-4 px-3">
               Contact Us
             </li>
