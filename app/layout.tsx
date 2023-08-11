@@ -15,7 +15,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Banner />
         <Nabvar />
-        {children}
+        <section>{children}</section>
       </body>
     </html>
   );
